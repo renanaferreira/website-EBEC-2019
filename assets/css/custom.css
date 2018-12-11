@@ -1976,8 +1976,7 @@ body h1 {
 }
 
 .gray_section{
-  background-color: lightgray;
-  opacity: 0.8;
+  background-color: rgba(200,200,200,0.9);
 }
 
 .borda{

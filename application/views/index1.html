@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--Links meta-->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,">
+    <meta name="description" content="Website of EBEC Aveiro 2017 - A students engineering competition organized by BEST Aveiro.">
+    <meta name="keywords" content="EBEC">
+    <meta name="author" content="ITBugs">
+
+    <!--Barra de navegacao-->
+    <link type="image/x-icon" href="../../assets/img/logos/roldana_laranja-01.png" rel="shortcut icon">
+    <title>EBEC Challenge Aveiro 2018</title>
+
+    <!--Google Apis-->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Kaushan+Script'>
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'>
+    <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700'>
+
+    <!--Links jquery-->
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <script type="text/javascript" src="../../assets/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../../assets/css/font-awesome.min.css">
+
+    <!--Links Form-validation-->
+    <link rel="stylesheet" href="../../assets/form-validation/css/formValidation.min.css">
+    <script type="text/javascript" src="../../assets/form-validation/js/formValidation.min.js"></script>
+    <script type="text/javascript" src="../../assets/form-validation/js/framework/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="../../assets/css/custom.css">
+    <link rel="stylesheet" href="../../assets/css/responsible.css">
+    <script type="text/javascript" src="../../assets/js/custom.js"></script>
+    <script type="text/javascript" src="../../assets/js/responsible.js"></script>
+
+
+    <link rel="stylesheet" href="../../assets/quote-carousel/quote-carousel.css">
+    <link rel="stylesheet" href="../../assets/fotorama-slider/fotorama.css">
+    <link rel="stylesheet" href="../../assets/youtube-tv/ytv.css">
+
+    <script type="text/javascript" src="../../assets/full-width-slider/js/jssor.slider.mini.js"></script>
+    <script type="text/javascript" src="../../assets/fotorama-slider/fotorama.js"></script>
+
+    <script type="text/javascript" src="../../assets/pnotify/js/pnotify.custom.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../assets/pnotify/css/pnotify.custom.min.css" media="all">
+
+    <link rel="stylesheet" href="<?php echo base_url('../../assets/css/scrollToTop.css') ?>"/>
+
+    <script>
+        $(document).ready(function(){
+
+
+            $('.scrollToTop').hide();
+
+            //Check to see if the window is top if not then display button
+            $(window).scroll(function(){
+                if($(window).scrollTop() + $(window).height() > $(document).height()-20) {
+                    $('.scrollToTop').fadeIn();
+                } else {
+                    $('.scrollToTop').fadeOut();
+                }
+            });
+
+            //Click event to scroll to top
+            $('.scrollToTop').click(function(){
+                $('html, body').animate({scrollTop : 0},800);
+                return false;
+            });
+
+        });
+    </script>
+
+
+</head>
+<body class="corpo">
+
+    <div id="holder">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">
+                        <img class="nav_logo"  height="" src="../../assets/img/logos/roldana_branca-01.png">
+                    </a>
+                </div>
+
+                <div class="navbar-header clearfix pull-right">
+                    <a class="navbar-brand" target="_blank" href="http://bestaveiro.web.ua.pt/">
+                        <img class="nav_logo_right" src="../../assets/img/logos/best_aveiro_logo.png">
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav hvr-sweep-to-right">
+                        <li>
+                            <a class="page-scroll" href="#EBEC-Challenge">EBEC Challenge Aveiro</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?php echo base_url('index.php/frontpage/apply')?>">Inscrição</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?php echo base_url('index.php/frontpage/faqs')?>">FAQs</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="<?php echo base_url('index.php/frontpage/partners')?>">Parcerias</a>
+                        </li>
+                        <script>
+                            var x = document.getElementById('box');
+                            x.onclick=myFunction();
+                            function myFunction() {
+    //                              var x = document.getElementById('box');
+                                if (x.style.color === 'white') {
+                                    x.style.color = 'orange';
+                                } else {
+                                    x.style.color='white';
+                                }
+                            }
+                        </script>
+
+                        <li>
+                            <a class="page-scroll" href="<?php echo base_url('index.php/frontpage/contacts')?>">Contactos</a>
+                        </li>
+                    </ul>
+
+                    <ul class="nav2 navbar-nav pull-right">
+                        <li>
+                            <a class="page-scroll" href="<?php echo base_url('index.php/frontpage/en')?>">EN</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!--corpo-->
+
+    <!--entrada-->
+    <div id="top" class="container gray_section" style="position: relative;">
+        <!--linhas-->
+        <div class="row" style="height:70px"></div>
+        <div class="row">
+            <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3"></div>
+            <div class="text-center col-xs-10 col-sm-8 col-md-8 col-lg-6">
+                <img class="img-responsive" style="opacity: 1" src="../../assets/img/ebc_material/logo.png">
+            </div>
+            <div class="col-xs-1 col-sm-2 col-md-2 col-lg-3"></div>
+        </div>
+        <div class="row">
+            <div>
+                <h1 class="text-center">15, 16, 17, 18 e 21 de março</h1>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
